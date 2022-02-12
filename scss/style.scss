@@ -78,6 +78,7 @@ body{
             align-items: flex-end;
             position: absolute;
             right: 10%;
+            top: 110%;
         }
         &-item{
           margin-left: 10px;  
@@ -99,7 +100,7 @@ body{
     }
 }
 .product{
-    padding-top: 10px;
+    padding-top: 15px;
     &__title{
         font-size: 30px;
         line-height: 30.94px;
@@ -157,5 +158,167 @@ body{
         width: 100%;
         max-width: 710px;
     }
+    &__order-card{
+        width: 270px;
+        background-color: #FDFCFC;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        &-top{
+            padding: 40px 0;
+            background-image: url(../images/order-card-top.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+        }
+        &-title{
+            color: #483C08;
+            font-size: 33px;
+            margin-bottom: 10px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            text-align: center;
+        }
+        &-timer{
+            color: #F6E791;
+            font-size: 36px;
+            margin-bottom: 10px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            text-align: center;
+        }
+        &-old-price{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            text-align: center;
+            font-size: 30px;
+            color: #6B6B6B;
+        }
+        &-new-price{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            text-align: center;
+            font-size: 36px;
+            color: #483C08;
+        }
+        &-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.advantages{
+    padding: 40px 0 40px 0;
+    background-image: url(../images/grey-paw.svg);
+    background-repeat: repeat;
+    margin-bottom: 20px;
+    &__title{
+        text-align: center;
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 30px;
+        background-image: linear-gradient(#F9E994, #537D13, #483C08);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+    }
+    &__card{
+        max-width: 305px;
+        background-color: #F6E791;
+        border-radius: 20px;
+        box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+        padding: 15px;
+        
+        &-image{
+            display: block;
+            margin: 0 auto;
+        }
+        &-description{
+            background-color: rgba(161, 211, 55, 0.4);
+            padding: 20px 15px;
+            border-radius: 20px;
+        }
+        &-title{
+            color: #FFFFFF;
+            text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            font-size: 18px;
+            line-height: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        &-text{
+            font-weight: $font-weight-secondary;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+        }
+        &-list{
+            display: grid;
+            grid-gap: 20px;
+            justify-content: center;
+            
+        }
+    }
+}
+.bottom__wraper{
+    background-image: linear-gradient(180deg, #E1EDF8 0%, rgba(127, 179, 225, 0) 59.37%, rgba(0, 0, 0, 0.25) 100%);
+}
+
+.container__about{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.about{
+    padding-top: 50px;
+    &__title{
+        color: #537D13;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    &__arrow{
+        width: 100%;
+        height: 300px;
+        display: none;
+
+        &-wraper{
+            // position: relative;
+            max-width: 700px;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    }
+    &__text{
+        // width: 60%;
+        // top: 0px;
+        // position: absolute;
+        // left: 15%;
+        // top: 15%;
+        color: #483C08;
+        padding: 10px;
+        border: 20px solid #D4DF6D;
+        font-weight: $font-weight-secondary;
+    }
+    &__span{
+        margin: 30px 0;
+        display: block;
+    }
+    &__figure{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    &__image{
+        max-width: 300px;
+    }
+}
+
+.footer{
+    background-image: url(../images/footer.svg);
+    padding-top: 170px;
 }
 
