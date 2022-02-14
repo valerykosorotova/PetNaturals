@@ -19,13 +19,13 @@
                     <nav class="header__navigation">
                         <ul class="header__navigation-list">
                             <li class="header__navigation-item">
-                                <a href="#" class="header__navigation-link">ORDER</a>
+                                <a href="#order-card" class="header__navigation-link">ORDER</a>
                             </li>
                             <li class="header__navigation-item">
-                                <a href="#" class="header__navigation-link">ABOUT</a>
+                                <a href="#about" class="header__navigation-link">ABOUT</a>
                             </li>
                             <li class="header__navigation-item">
-                                <a href="#" class="header__navigation-link">RESULTS</a>
+                                <a href="#result" class="header__navigation-link">RESULTS</a>
                             </li>
                         </ul>
                     </nav>
@@ -53,18 +53,24 @@
                                     <img src="./images/products-cats.svg" alt="playing cats with PetNaturals" class="product__image">
                                 </picture>
                             </figure>
-                            <article class="product__order-card">
+                            <article id="order-card" class="product__order-card">
                                 <div class="product__order-card-top">
                                     <h2 class="product__order-card-title">TIME LEFT</h2>
-                                    <div class="product__order-card-timer">2:00:00</div>
+                                    <div class="product__order-card-timer" id="countdown"></div>
                                     <span class="product__order-card-old-price">120uah</span>
                                     <span class="product__order-card-new-price">60uah</span>
                                 </div>
                                 <div class="product__order-card-form">
-                                    <input class="product__order-card-name" type="text">
-                                    <input class="product__order-card-phone" type="text">
+                                    <input class="product__order-card-name product__order-card-input" 
+                                    type="text"
+                                    placeholder="Name">
+                                    <input class="product__order-card-phone product__order-card-input" 
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="+38(0__) ___-__-__">
                                     <button class="product__order-card-button">ORDER</button>
-                                    <div class="product__order-card-date">Order date: 17.11.2021</div>
+                                    <div class="product__order-card-date" id="order-date"></div>
                                 </div>
                             </article>
                     </div>
@@ -74,7 +80,7 @@
     </div>
     </div>
     <main>
-        <section class="advantages">
+        <section id="about" class="advantages">
             <div class="container">
                 <h2 class="advantages__title">From the manufacturer</h2>
                 <ul class="advantages__card-list">
@@ -88,8 +94,8 @@
                             </p>
                         </div>
                     </li>
-                    <li class="advantages__card">
-                        <img src="./images/advantages-eco.webp" alt="" class="advantages__card-image">
+                    <li class="advantages__card ">
+                        <img src="./images/advantages-eco.webp" alt="" class="advantages__card-image advantages__card-image-peace">
                         <div class="advantages__card-description">
                             <h3 class="advantages__card-title">Peace of Mind</h3>
                             <p class="advantages__card-text">Pet Naturals of Vermont’s research-backed formula 
@@ -112,11 +118,10 @@
         </section>
     </main>
     <div class="bottom__wraper">
-        <section class="about">
+        <section id="result" class="about">
             <div class="container container__about">
                 <h2 class="about__title">Best Uses for Calming Chews</h2>
                 <div class="about__arrow-wraper">
-                    <img src="./images/arrow.svg" alt="" class="about__arrow">
                     <p class="about__text">Car rides. Vet visits. Thunderstorms. Boarding. Parties. 
                         These are just a handful of times when Calming chews may come in handy. 
                         Does your dog hate to be left home alone? Does your cat love hiding under the bed? 
@@ -126,6 +131,7 @@
                         The 30-minute activation period gives you a chance to increase dosage if you’re not seeing 
                         expected results. Calming is safe for unique stress inducing events and for long-term use to help 
                         manage everyday stress.
+                        
                     </p>
                 </div>
                 
@@ -140,5 +146,16 @@
         </section>
         <footer class="footer"></footer>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="./js/inputMask.js"></script>
+    <script src="./js/formatDate.js"></script>
+    <script src="./js/countdown.js"></script>
 </body>
 </html>
