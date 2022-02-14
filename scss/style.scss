@@ -264,6 +264,10 @@ body{
             border-radius: 30px;
             min-width: 222px;
             padding: 6px 0;
+            cursor: pointer;
+            &:hover{
+                background-color: #F6E791;
+            }
         }
         &-date{
             font-weight: $font-weight-secondary;
