@@ -275,7 +275,7 @@ body{
     }
 }
 
-.advantages{
+.about{
     padding: 40px 0;
     background-image: url(../images/grey-paw.svg);
     background-repeat: repeat;
@@ -343,11 +343,11 @@ body{
     background-image: linear-gradient(180deg, #E1EDF8 0%, rgba(127, 179, 225, 0) 59.37%, rgba(0, 0, 0, 0.25) 100%);
 }
 
-.container__about{
+.container__result{
     text-align: center;
 }
 
-.about{
+.result{
     padding-top: 50px;
     padding-bottom: 20px;
     &__title{
@@ -487,7 +487,7 @@ body{
            order: 3;
        } 
     }
-    .advantages{
+    .about{
         padding: 100px 0 80px 0;
         &__title{
             font-size: 50px;
@@ -517,7 +517,7 @@ body{
             }
         }
     }
-    .about{
+    .result{
         padding-top: 100px;
         &__title{
             font-size: 52px;
